@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        
+        /* Left Side Navigation */
+        .sidebar {
+            width: 200px;
+            background: #2c3e50;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding: 20px;
+        }
+        
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sidebar nav ul li {
+            margin: 15px 0;
+        }
+        
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        /* Right Side Content */
+        .main-content {
+            margin-left: 240px; /* Push content right */
+            padding: 20px;
+            width: calc(100% - 240px);
+        }
+        
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#app">App</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Right Side Content -->
+    <div class="main-content">
+        <section id="home">
+            <h1>Welcome to Our Startup</h1>
+            <p>Your innovative solution here.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Service details...</p>
+        </section>
+        
+        <section id="pricing">
+            <h2>Pricing Plans</h2>
+            <p>Pricing details...</p>
+        </section>
+        
+        <section id="blog">
+            <h2>Latest Blogs</h2>
+            <p>Blog posts...</p>
+        </section>
+        
+        <section id="app">
+            <h2>Download Our App</h2>
+            <p>App details...</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact form...</p>
+        </section>
+    </div>
+</body>
+</html>
